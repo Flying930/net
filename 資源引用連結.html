@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+        <style>@import "style.css";</style>
+        <title>
+            資源引用連結
+        </title>
+        <center><font size="7"><b><i>資源引用連結</b></i></font></center>
+        <br><br>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <div id="skd" style="position:absolute;">
+            <image src="img/skadi.gif" style='width:40%' z-index: -1;/>
+        </div>      
+        <table align=center border="2" width="90%">
+            <tr>
+                <td width="20%" bgcolor=white>
+                    <a href="https://www.steamxo.com/wp-content/uploads/2019/05/MRIHPj232400_646628.jpg">background</a></font>
+                </td>
+                <td width="20%" bgcolor=white>
+                    <a href="http://static.prts.wiki/music/music/beta2_180603/m_sys_title_combine.mp3">bgm</a></font>
+                </td>
+                <td width="20%" bgcolor=white>
+                    <a href="https://patchwiki.biligame.com/images/arknights/2/27/pbi72cnjba5n5a5b87aog0a5rax8w4d.jpg ">skadi(img)</a></font>
+                </td>
+                <td width="20%" bgcolor=white>
+                    <a href="https://patchwiki.biligame.com/images/arknights/9/98/gbilbd4oplcrqhm6bd1t2j2n4o3s9as.ogg">skadi(sound)</a></font>
+                </td>
+                <td width="20%" bgcolor=white>
+                    <a href="https://patchwiki.biligame.com/images/arknights/7/74/bo6kunlrtenufri5lu1kvodm8s2f2z6.jpg">mudrock(img)</a></font>
+                </td>           
+            </tr>
+            <tr>
+                <td width="20%" bgcolor=white>
+                    <a href="http://prts.wiki/images/f/f5/%E6%B3%A5%E5%B2%A9_%E9%97%AE%E5%80%99.wav">mudrock(sound)</a></font>
+                </td>
+            </tr>  
+        </table>
+        <center><a href="首頁.html" style="color:white;">回首頁</a></font></center>
+    </body>
+</html>
+<script>
+    function Skadi() {
+        var div = document.getElementById("skd");
+        //if (!div) {return;}
+        var intX = window.event.pageX;
+        var intY = window.event.pageY;
+        div.style.left = intX+"px";
+        div.style.top = intY+"px";
+}
+document.onmousemove = Skadi;
+</script>
