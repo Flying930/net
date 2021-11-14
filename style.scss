@@ -1,14 +1,14 @@
 body{
-	background-image: url("https://www.steamxo.com/wp-content/uploads/2019/05/MRIHPj232400_646628.jpg");
+	background-image: url("img/mg1.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	animation: myanimation 17s infinite;
 }
 @keyframes myanimation {
-    0% {background-image: url("https://www.steamxo.com/wp-content/uploads/2019/05/MRIHPj232400_646628.jpg");}
-    25% {background-image: url("https://www.memuplay.com/blog/wp-content/uploads/2019/08/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F.jpg");}
-	50% {background-image: url("https://miro.medium.com/max/2000/1*b6zEhOs0W5v0Uul-8aDW7Q.png");}
-	75% {background-image: url("https://img.139y.com/m00/f9/fb/03df4cff4d832ea8b1e941b2f7680015.png");}
-	100% {background-image: url("https://www.steamxo.com/wp-content/uploads/2019/05/MRIHPj232400_646628.jpg");}
+    0% {background-image: url("img/mg1.jpg");}
+    25% {background-image: url("img/bg2.jpg");}
+	50% {background-image: url("img/bg3.png");}
+	75% {background-image: url("img/bg4.png");}
+	100% {background-image: url("img/mg1.jpg");}
 }
