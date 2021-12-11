@@ -5,7 +5,9 @@
     </head>
     <body>
         <!--<input type="button" id="bn">-->
-        <input type="image" src="img\進入.png" id="bb" onClick="location.href='首頁.html'">
+        <!-- <input type="image" src="img\進入.png" id="bb" onClick="location.href='首頁.html'"> -->
+        <button id="enter" onClick="location.href='首頁.html'"><img src="img\進入.png" id="enter-img"></button>
+        <audio id="myaudio" src="http://static.prts.wiki/music/music/beta2_180603/m_sys_title_combine.mp3" autoplay="autoplay" loop="true"></audio>
     </body>
     <style>
         body{
@@ -14,25 +16,19 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-        #bn{
-            width: 157.5px;
-            height:54px;
-            position:fixed;
-            top:72%;
-            left:43.8%;
-            background-image:url("img/進入.png");
-            background-size:157.5px 54px;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: 72% 45%;
-            
-        }
-        #bb{
+        #enter{
             width: 157.5px;
             height:54px;
             position:fixed;
             top:72%;
             left:43.8%;   
+        }
+        #enter-img{
+            width: 156.5px;
+            height:53px;
+            position:fixed;
+            top:72%;
+            left:43.8%; 
         }
     </style>
 </html>
