@@ -9,12 +9,10 @@
     $name=$_POST['name'];//post獲取表單裡的name
     $account=$_POST['account'];//post獲取表單裡的accountnumber
     $password=$_POST['password'];//post獲取表單裡的password
-    echo $name,$account,$password;
-    echo "adfa";
-    return;
     $q="insert into `user`(`id`,`user_id`,`user_account`,`user_password`) values (null,'$name','$account','$password')";//向資料庫插入表單傳來的值的sql
-    $reslut=mysql_query($q,$con);//執行sql
-    echo $account;
+    //$reslut=mysql_query($q,$con);//執行sql
+    echo $q;
+    return;
     console.log($name);
     
 ?> 
