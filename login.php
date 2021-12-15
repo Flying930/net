@@ -8,8 +8,6 @@
     $passowrd = $_POST['password'];//post獲得使用者密碼單值
 
     if ($account && $passowrd){//如果使用者名稱、帳號和密碼都不為空
-        echo $account;
-        return ;
         $sql = "select * from `user` where user_account = '$account'and user_password='$passowrd'";//檢測資料庫是否有對應的username和password的sql
         $result = mysql_query($sql);//執行sql
         $rows=mysql_num_rows($result);//返回一個數值
