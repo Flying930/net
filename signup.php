@@ -4,10 +4,10 @@
         exit("錯誤執行");
     }//判斷是否有submit操作
     $name=$_POST['name'];//post獲取表單裡的name
-    $accountnumber=$_POST['accountnumber']//post獲取表單裡的accountnumber
+    $account=$_POST['account']//post獲取表單裡的accountnumber
     $password=$_POST['password'];//post獲取表單裡的password
     include('connect.php');//連結資料庫
-    $q="insert into user(id,username,accountnumber,password) values (null,'$name','$accountnumber','$password')";//向資料庫插入表單傳來的值的sql
+    $q="insert into user(id,username,account,password) values (null,'$name','$account','$password')";//向資料庫插入表單傳來的值的sql
     $reslut=mysql_query($q,$con);//執行sql
     if (!$reslut){
         die('Error: ' . mysql_error());//如果sql執行失敗輸出錯誤
