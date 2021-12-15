@@ -21,6 +21,10 @@ mysqli_close($link);  // 關閉資料庫連接
     if(!isset($_POST['submit'])){
         exit("錯誤執行");
     }//判斷是否有submit操作
+    $name=$_POST['user_id'];//post獲取表單裡的name
+    $account=$_POST['user_account'];//post獲取表單裡的accountnumber
+    $password=$_POST['user_password'];//post獲取表單裡的password
+    
 ?> 
 </body>
 </html>
