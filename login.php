@@ -18,19 +18,19 @@
         }
         else{
             echo "使用者名稱或密碼錯誤";
-            echo "
+            echo ?>"
             <script>
             setTimeout(function(){window.location.href='index.html';},1000);
-            </script>
-            ";//如果錯誤使用js 1秒後跳轉到登入頁面重試;
+            </script>";<?php
+            //如果錯誤使用js 1秒後跳轉到登入頁面重試;
         }
     }
     else{//如果使用者名稱或密碼有空
         echo "表單填寫不完整";
-        echo "
+        echo ?>" 
         <script>
         setTimeout(function(){window.location.href='index.html';},1000);
-        </script>";
+        </script>";<?php
         //如果錯誤使用js 1秒後跳轉到登入頁面重試;
     }
     mysql_close();//關閉資料庫

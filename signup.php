@@ -14,6 +14,10 @@
     }
     else{
         echo "註冊成功";//成功輸出註冊成功
+        echo ?>"
+        <script>
+        setTimeout(function(){window.location.href='index.html';},1000);
+        </script>";<?php
     }
     mysql_close($con);//關閉資料庫
 ?>
