@@ -4,12 +4,12 @@
         exit("錯誤執行");
     }//檢測是否有submit操作 
     include('connect.php');//連結資料庫
-    $name = $_POST['name'];//post獲得使用者名稱錶單值
+    $name = $_POST['user_id'];//post獲得使用者名稱錶單值
     $account=$_POST['account']//post獲取表單裡的accountnumber
-    $passowrd = $_POST['password'];//post獲得使用者密碼單值
+    $passowrd = $_POST['user_password'];//post獲得使用者密碼單值
 
     if ($name && $accountnumber && $passowrd){//如果使用者名稱、帳號和密碼都不為空
-        $sql = "select * from user where username = '$name' and account = '$account'and password='$passowrd'";//檢測資料庫是否有對應的username和password的sql
+        $sql = "select * from user where user_id = '$name' and user_account = '$account'and user_password='$passowrd'";//檢測資料庫是否有對應的username和password的sql
         $result = mysql_query($sql);//執行sql
         $rows=mysql_num_rows($result);//返回一個數值
         if($rows){//0 false 1 true
