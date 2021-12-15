@@ -10,11 +10,12 @@
     $account=$_POST['account'];//post獲取表單裡的accountnumber
     $password=$_POST['password'];//post獲取表單裡的password
     $q="insert into `user`(`user_id`,`user_account`,`user_password`) values ('$name','$account','$password')";//向資料庫插入表單傳來的值的sql
-    //$reslut=mysql_query($q,$con);//執行sql
-    echo $q;
-    return;
-    console.log($name);
-    
+    $reslut=mysql_query($q,$link);//執行sql
+    if(!$reslut){
+
+    }
+    else  {echo "註冊成功";}
+
 ?> 
 </body>
 </html>
