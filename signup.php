@@ -10,6 +10,7 @@
     $account=$_POST['account'];//post獲取表單裡的accountnumber
     $password=$_POST['password'];//post獲取表單裡的password
     $q="insert into `user`(`user_id`,`user_account`,`user_password`) values ('$name','$account','$password')";//向資料庫插入表單傳來的值的sql
+    echo $q."<br>".$link;
     if ($link->query($q) === TRUE) {
         echo "新记录插入成功";
     } else {
