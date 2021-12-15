@@ -11,6 +11,7 @@
     $password=$_POST['user_password'];//post獲取表單裡的password
     $q="insert into `user`(`id`,`user_id`,`user_account`,`user_password`) values (null,'$name','$account','$password')";//向資料庫插入表單傳來的值的sql
     $reslut=mysql_query($q,$con);//執行sql
+    echo $q;
     
 ?> 
 </body>
