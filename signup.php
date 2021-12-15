@@ -7,11 +7,11 @@
         exit("錯誤執行");
     }//判斷是否有submit操作
     $name=$_POST['name'];//post獲取表單裡的name
-    echo $name;
-    echo "adfa";
-    return;
     $account=$_POST['account'];//post獲取表單裡的accountnumber
     $password=$_POST['password'];//post獲取表單裡的password
+    echo $name,$account,$passowrd;
+    echo "adfa";
+    return;
     $q="insert into `user`(`id`,`user_id`,`user_account`,`user_password`) values (null,'$name','$account','$password')";//向資料庫插入表單傳來的值的sql
     $reslut=mysql_query($q,$con);//執行sql
     echo $account;
