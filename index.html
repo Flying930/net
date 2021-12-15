@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="utf-8">
     </head>
     <body>
         <!--<input type="button" id="bn">-->
         <!-- <input type="image" src="img\進入.png" id="bb" onClick="location.href='首頁.html'"> -->
-        <button id="enter" onClick="location.href='首頁.html'"><img src="img\進入.png" id="enter-img"></button>
-        <audio id="myaudio" src="bgm/標題．Main.mp3" autoplay="autoplay" loop="true"></audio>
+        <form action="signup.php" method="post"><br><br><br><br><br><br><br><br><br>
+            <p><center>使用者帳號: <input type="text" name="name"></center></p>
+            <p><center>&emsp;&emsp;&emsp;密碼: <input type="text" name="password"></center></p><br>
+            <p><center><a href="註冊.html">還沒註冊嗎?</a></center></p>
+        </form>
+        <button type="submit" name="submit" id="enter"><img src="img\進入.png" id="enter-img"></button>
+        <!-- <audio id="myaudio" src="bgm/標題．Main.mp3" autoplay="autoplay" loop="true"></audio> -->
+        <!-- onClick="location.href='首頁.html'" -->
+        <!-- mysql://b184b9cfe884e3:53020e02@us-cdbr-east-05.cleardb.net/heroku_d320a3179e97ee9?reconnect=true -->
     </body>
+    
     <style>
         body{
             background-image:url("img/登入畫面.png");
-            background-size:cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-size: cover;
         }
         #enter{
             width: 157.5px;
             height:54px;
             position:fixed;
-            top:72%;
+            top:65%;
             left:43.8%;   
         }
         #enter-img{
             width: 156.5px;
             height:53px;
             position:fixed;
-            top:72%;
+            top:65%;
             left:43.8%; 
         }
     </style>
+    
 </html>
