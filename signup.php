@@ -9,8 +9,12 @@
     $name=$_POST['name'];//post獲取表單裡的name
     $account=$_POST['account'];//post獲取表單裡的accountnumber
     $password=$_POST['password'];//post獲取表單裡的password
+    echo $name,$account,$password;
     $q="insert into `user`(`user_id`,`user_account`,`user_password`) values ('$name','$account','$password')";//向資料庫插入表單傳來的值的sql
-    echo $q."<br>".$link;
+    echo $q;
+    echo $link;
+    return ;
+
     if ($link->query($q) === TRUE) {
         echo "新记录插入成功";
     } else {
