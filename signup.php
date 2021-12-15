@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php 
     header("Content-Type: text/html; charset=utf8");
     if(!isset($_POST['submit'])){
@@ -20,4 +22,5 @@
         </script>";<?php
     }
     mysql_close($con);//關閉資料庫
-?>
+?></body>
+</html>
