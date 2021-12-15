@@ -12,7 +12,7 @@
     $q="insert into `user`(`user_id`,`user_account`,`user_password`) values ('$name','$account','$password')";//向資料庫插入表單傳來的值的sql
     $reslut=mysql_query($q,$link);//執行sql
     if(!$reslut){
-        echo "註冊失敗"
+        echo "註冊失敗";
     }
     else  {echo "註冊成功";}
 
