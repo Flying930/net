@@ -5,7 +5,7 @@
     }//檢測是否有submit操作 
     include('connect.php');//連結資料庫
     $name = $_POST['user_id'];//post獲得使用者名稱錶單值
-    $account=$_POST['account']//post獲取表單裡的accountnumber
+    $account=$_POST['user_account']//post獲取表單裡的accountnumber
     $passowrd = $_POST['user_password'];//post獲得使用者密碼單值
 
     if ($name && $accountnumber && $passowrd){//如果使用者名稱、帳號和密碼都不為空
