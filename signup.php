@@ -2,7 +2,7 @@
 <body>
 <?php
     include('connect.php');//連結資料庫
-    $link = @mysqli_connect( 
+    $link = new mysqli_connect( 
         'us-cdbr-east-05.cleardb.net',  // MySQL主機名稱 
         'b184b9cfe884e3',       // 使用者名稱 
         '53020e02',  // 密碼 
