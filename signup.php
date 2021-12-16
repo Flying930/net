@@ -13,15 +13,15 @@
     $q="use `heroku_d320a3179e97ee9`; insert into `user`(`user_id`,`user_account`,`user_password`) values ('$name','$account','$password')";//向資料庫插入表單傳來的值的sql
     echo "Q=$q";
     echo "LINK=$link";
-    try{
+    //try{
     if ($link->query($q) === TRUE) {
         echo "新记录插入成功";
     } else {
         echo "Error: " . $q . "<br>" . $link->error;
     }
-    }catch(Exception $e){
+    /*}catch(Exception $e){
         print_r($e);
-    }
+    }*/
 
 ?> 
 </body>
