@@ -12,5 +12,5 @@ if ( !$link ) {
 else {
    echo "MySQL資料庫test連接成功!<br/>";
 }
-mysqli_close($link);  // 關閉資料庫連接
+//mysqli_close($link);  // 關閉資料庫連接
 ?>
