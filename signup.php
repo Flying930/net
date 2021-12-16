@@ -14,7 +14,7 @@
     echo "Q=$q";
     echo "LINK=$link";
     
-    $reslut=mysql_query($q,$con);//執行sql
+    $reslut=mysql_query($q,$link);//執行sql
     if (!$reslut){
         die('Error: ' . mysql_error());//如果sql執行失敗輸出錯誤
     }
