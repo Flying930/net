@@ -7,14 +7,13 @@
         exit("錯誤執行");
     }//判斷是否有submit操作
     $name=$_POST['name'];//post獲取表單裡的name
-    $account=$_POST['account'];//post獲取表單裡的accountnumber
     $password=$_POST['password'];//post獲取表單裡的password
     echo "AAA=$name,$account,$password";
-    $q="use `heroku_d320a3179e97ee9`; insert into `user`(`user_id`,`user_account`,`user_password`) values ('$name','$account','$password')";//向資料庫插入表單傳來的值的sql
+    $q="use `heroku_d320a3179e97ee9`; insert into `user`(`user_id`,`user_password`) values ('$name','$password')";//向資料庫插入表單傳來的值的sql
     echo "Q=$q";
     echo "LINK=$link";
     
-    $reslut=mysql_query($q,$link);//執行sql
+    $reslut=mysql_query($link,$q);//執行sql
     if (!$reslut){
         die('Error: ' . mysql_error());//如果sql執行失敗輸出錯誤
     }
