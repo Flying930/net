@@ -10,9 +10,9 @@
     $password=$_POST['password'];//post獲取表單裡的password
     echo "AAA=$name,$account,$password";
     $q="use `heroku_d320a3179e97ee9`; insert into `user`(`user_id`,`user_password`) values ('$name','$password')";//向資料庫插入表單傳來的值的sql
-    echo "Q=$q";
+    echo "Q=$q";return;
     echo "LINK=$link";
-    return;
+    //return;
     $reslut=mysql_query($link,$q);//執行sql
     if (!$reslut){
         die('Error: ' . mysql_error());//如果sql執行失敗輸出錯誤
