@@ -1,8 +1,8 @@
 <html>
 <body>
 <?php
-    echo "AAA";
     include('connect.php');//連結資料庫
+    echo "AAA";
     //header("Content-Type: text/html; charset=utf8");
     /*if(!isset($_POST['submit'])){
         exit("錯誤執行");
