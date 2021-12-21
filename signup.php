@@ -8,10 +8,10 @@
     }//判斷是否有submit操作
     $name=$_POST['name'];//post獲取表單裡的name
     $password=$_POST['password'];//post獲取表單裡的password
-    echo "AAA=$name,$account,$password";
+    echo "AAA=$name,$account,$password";return;
     $q="use `heroku_d320a3179e97ee9`; insert into `user`(`user_id`,`user_password`) values ('$name','$password')";//向資料庫插入表單傳來的值的sql
-    echo "Q=$q";return;
-    echo "LINK=$link";
+    echo "$q";return;
+    echo "$link";
     //return;
     $reslut=mysql_query($link,$q);//執行sql
     if (!$reslut){
