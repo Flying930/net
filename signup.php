@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-    //include('connect.php');//連結資料庫
+    include('connect.php');//連結資料庫
     //header("Content-Type: text/html; charset=utf8");
     /*if(!isset($_POST['submit'])){
         exit("錯誤執行");
@@ -10,6 +10,7 @@
     $name=$_POST['name'];//post獲取表單裡的name
     $password=$_POST['password'];//post獲取表單裡的password
     echo $name;
+    echo $password;
     /*if($_SERVER["REQUEST_METHOD"]=="POST"){
     $name=$_POST['name'];//post獲取表單裡的name
     $password=$_POST['password'];//post獲取表單裡的password
