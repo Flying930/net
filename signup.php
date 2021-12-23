@@ -37,7 +37,7 @@
         echo "新记录插入成功";
     } else {
         echo "Error: " . $q . "<br>" . $link->error;
-    }*/}*/
+    }}*/
 ?> 
 </body>
 </html>
