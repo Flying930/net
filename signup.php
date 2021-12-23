@@ -7,14 +7,11 @@
         exit("錯誤執行");
     }//判斷是否有submit操作*/
     echo "AAAA";
-    $name=$_POST['name'];//post獲取表單裡的name
-    $password=$_POST['password'];//post獲取表單裡的password
-    echo $name;
-    echo $password;
-    /*if($_SERVER["REQUEST_METHOD"]=="POST"){
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
     $name=$_POST['name'];//post獲取表單裡的name
     $password=$_POST['password'];//post獲取表單裡的password
     echo "aa   ";
+    echo $name;
     echo $password;
     //echo "  00000   "
     //echo $name;
@@ -38,7 +35,7 @@
         echo "新记录插入成功";
     } else {
         echo "Error: " . $q . "<br>" . $link->error;
-    }}*/
+    }*/}
 ?> 
 </body>
 </html>
