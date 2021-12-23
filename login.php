@@ -6,7 +6,7 @@
     $password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $q = "select * from `user` where user_name = '$name'";//檢測資料庫是否有對應的username的sql
-        $result = mysql_query($link,$q);//執行sql
+        //$result = mysql_query($link,$q);//執行sql
         echo $q;
         /*if(mysqli_num_rows($result)==1 && $password==mysqli_fetch_assoc($result)["password"]){
             session_start();
