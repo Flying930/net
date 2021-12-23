@@ -11,7 +11,7 @@
         $password=$_POST['password'];//post獲取表單裡的password
         $q="INSERT INTO user (user_name,user_password) VALUES ('$name','$password')";//向資料庫插入表單傳來的值的sql
         if ($link->query($q) === TRUE) {
-            echo "註冊成功";//成功輸出註冊成功
+            echo "註冊成功! 3秒後將跳至登入頁面~";//成功輸出註冊成功
             echo "<a href='index.html'>未成功跳轉頁面請點擊此</a>";
                 header("refresh:3;url=index.html");
                 exit;
