@@ -12,7 +12,7 @@
     echo "aa   ";
     echo $name;
     echo $password;
-    $q="INSERT INTO `user`(`user_name`,`user_password`) VALUES ('$name','$password')";//向資料庫插入表單傳來的值的sql
+    $q="INSERT INTO `user` (`user_name`,`user_password`) VALUES ('$name','$password')";//向資料庫插入表單傳來的值的sql
     echo $q;
     /*echo $link;
     return;

@@ -10,8 +10,8 @@ if ( !$link ) {
    exit();
 }
 else {
-   //echo "MySQL資料庫test連接成功!<br/>";
-   return;
+   echo "MySQL資料庫test連接成功!<br/>";
+   //return;
 }
 //mysqli_close($link);  // 關閉資料庫連接
 ?>
