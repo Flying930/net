@@ -7,7 +7,8 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $q = "select * from `user` where user_name = '$name' and user_password = '$password'";//檢測資料庫是否有對應的username的sql
         echo "aa";
-        //if($link->query($q) === TRUE){
+        if($link->query($q) === TRUE){
+            echo "  bb";
             /*if(mysqli_num_rows($result)==1 && $password==mysqli_fetch_assoc($result)["password"]){
                 session_start();
                 $_SESSION["loggedin"] = true;
@@ -15,7 +16,7 @@
                 header("location:首頁.html");
             }
             //else{function_alert("帳號或密碼錯誤"); }*/
-        //}
+        }
     }
     else{function_alert("Something wrong");}
     /*else{//如果使用者名稱或密碼有空
