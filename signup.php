@@ -14,10 +14,10 @@
     echo $q;
     if ($link->query($q) === TRUE) {
         echo "註冊成功";//成功輸出註冊成功
-        echo ?>"
+        /*echo ?>"
         <script>
         setTimeout(function(){window.location.href='index.html';},1000);
-        </script>";<?php
+        </script>";<?php*/
     } else {
         echo "Error ";
     }
