@@ -13,12 +13,15 @@
     $q="INSERT INTO user (user_name,user_password) VALUES ('$name','$password')";//向資料庫插入表單傳來的值的sql
     echo $q;
     if ($link->query($q) === TRUE) {
-        echo "新记录插入成功";
+        echo "註冊成功";//成功輸出註冊成功
+        echo ?>"
+        <script>
+        setTimeout(function(){window.location.href='index.html';},1000);
+        </script>";<?php
     } else {
         echo "Error ";
     }
-    /*echo $link;
-    return;
+    /*
     $reslut=mysql_query($link,$q);//執行sql
     if (!$reslut){
         die('Error: ' . mysql_error());//如果sql執行失敗輸出錯誤
