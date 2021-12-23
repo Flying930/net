@@ -13,8 +13,8 @@
                 $_SESSION["loggedin"] = true;
                 $_SESSION["name"] = mysqli_fetch_assoc($result)["name"];
                 header("location:首頁.html");
-            }*/
-            //else{function_alert("帳號或密碼錯誤"); }
+            }
+            //else{function_alert("帳號或密碼錯誤"); }*/
         //}
     }
     else{function_alert("Something wrong");}
