@@ -13,8 +13,8 @@
     echo $name;
     echo $password;
     $q="use `heroku_d320a3179e97ee9`; insert into `user`(`user_id`,`user_password`) values ('$name','$password')";//向資料庫插入表單傳來的值的sql
-    echo $q;
-    echo "$link";
+    return ;echo $q;
+    echo $link;
     return;
     $reslut=mysql_query($link,$q);//執行sql
     if (!$reslut){
