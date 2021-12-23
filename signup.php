@@ -12,6 +12,11 @@
     echo "aa   ";
     $q="INSERT INTO user (user_name,user_password) VALUES ('$name','$password')";//向資料庫插入表單傳來的值的sql
     echo $q;
+    if ($link->query($q) === TRUE) {
+        echo "新记录插入成功";
+    } else {
+        echo "Error ";
+    }
     /*echo $link;
     return;
     $reslut=mysql_query($link,$q);//執行sql
