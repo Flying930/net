@@ -14,10 +14,9 @@
     echo $q;
     if ($link->query($q) === TRUE) {
         echo "註冊成功";//成功輸出註冊成功
-        /*echo ?>"
-        <script>
-        setTimeout(function(){window.location.href='index.html';},1000);
-        </script>";<?php*/
+        echo "<a href='index.php'>未成功跳轉頁面請點擊此</a>";
+            header("refresh:32;url=index.html");
+            exit;
     } else {
         echo "Error ";
     }
