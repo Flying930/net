@@ -6,7 +6,7 @@
     $password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $q = "select * from `user` where user_name = '$name' and user_password = '$password'";//檢測資料庫是否有對應的username的sql
-        echo q;
+        echo $q;
         if($link->query($q) === TRUE){
             echo "  bb";
             /*if(mysqli_num_rows($result)==1 && $password==mysqli_fetch_assoc($result)["password"]){
