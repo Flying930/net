@@ -13,9 +13,9 @@
             $_SESSION["name"] = mysqli_fetch_assoc($result)["name"];
             header("location:首頁.html");
         }
-        else{function_alert("帳號或密碼錯誤"); }
+        //else{function_alert("帳號或密碼錯誤"); }
     }
-    else{function_alert("Something wrong");}
+    //else{function_alert("Something wrong");}
     /*else{//如果使用者名稱或密碼有空
         echo "表單填寫不完整! 2秒後將跳至登入頁面~";
         echo "<a href='index.html'>未成功跳轉頁面請點擊此</a>";
@@ -23,13 +23,13 @@
                 exit;
         //如果錯誤 2秒後跳轉到登入頁面重試;
     }*/
-    function function_alert($message) { 
+    /*function function_alert($message) { 
       
         // Display the alert box  
         echo "<script>alert('$message');
          window.location.href='index.html';
         </script>"; 
         return false;
-    } 
+    } */
     mysql_close();//關閉資料庫
 ?>
