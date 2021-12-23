@@ -2,8 +2,10 @@
     //header("Content-Type: text/html; charset=utf8");
     include('connect.php');//連結資料庫
     $name=$_POST['name'];//post獲取表單裡的name
-    $passowrd = $_POST['password'];//post獲得使用者密碼單值
+    $password = $_POST['password'];//post獲得使用者密碼單值
     $password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
+    echo $name;
+    echo $password;
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $q = "select * from `user` where user_name = '$name'";//檢測資料庫是否有對應的username的sql
         //$result = mysql_query($link,$q);//執行sql
