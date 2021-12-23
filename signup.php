@@ -12,7 +12,7 @@
     echo "aa   ";
     echo $name;
     echo $password;
-    $q="use `heroku_d320a3179e97ee9`; insert into `user`(`user_id`,`user_password`) values ('.$name.','.$password.')";//向資料庫插入表單傳來的值的sql
+    $q="use `heroku_d320a3179e97ee9`; INSERT INTO `user`(`user_id`,`user_password`) values ('$name','$password')";//向資料庫插入表單傳來的值的sql
     echo $q;
     /*echo $link;
     return;
