@@ -7,6 +7,9 @@
         exit("錯誤執行");
     }//判斷是否有submit操作*/
     echo "AAAA";
+    $name=$_POST['name'];//post獲取表單裡的name
+    $password=$_POST['password'];//post獲取表單裡的password
+    echo $name;
     /*if($_SERVER["REQUEST_METHOD"]=="POST"){
     $name=$_POST['name'];//post獲取表單裡的name
     $password=$_POST['password'];//post獲取表單裡的password
