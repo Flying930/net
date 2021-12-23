@@ -10,8 +10,10 @@
     if($_SERVER["REQUEST_METHOD"]=="POST"){
     $name=$_POST['name'];//post獲取表單裡的name
     $password=$_POST['password'];//post獲取表單裡的password
-    echo "aa";
+    echo "aa   ";
     echo $password;
+    echo "  00000   "
+    echo $name;
     /*$q="use `heroku_d320a3179e97ee9`; insert into `user`(`user_id`,`user_password`) values ('$name','$password')";//向資料庫插入表單傳來的值的sql
     echo "$q";return;
     echo "$link";
