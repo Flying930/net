@@ -7,12 +7,13 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $q = "select * from `user` where user_name = '$name'";//檢測資料庫是否有對應的username的sql
         $result = mysql_query($link,$q);//執行sql
-        if(mysqli_num_rows($result)==1 && $password==mysqli_fetch_assoc($result)["password"]){
+        echo $q;
+        /*if(mysqli_num_rows($result)==1 && $password==mysqli_fetch_assoc($result)["password"]){
             session_start();
             $_SESSION["loggedin"] = true;
             $_SESSION["name"] = mysqli_fetch_assoc($result)["name"];
             header("location:首頁.html");
-        }
+        }*/
         //else{function_alert("帳號或密碼錯誤"); }
     }
     //else{function_alert("Something wrong");}
