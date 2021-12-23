@@ -6,19 +6,16 @@
     /*if(!isset($_POST['submit'])){
         exit("錯誤執行");
     }//判斷是否有submit操作*/
-    echo "AAAA";
     if($_SERVER["REQUEST_METHOD"]=="POST"){
     $name=$_POST['name'];//post獲取表單裡的name
     $password=$_POST['password'];//post獲取表單裡的password
     echo "aa   ";
     echo $name;
     echo $password;
-    //echo "  00000   "
-    //echo $name;
-    /*$q="use `heroku_d320a3179e97ee9`; insert into `user`(`user_id`,`user_password`) values ('$name','$password')";//向資料庫插入表單傳來的值的sql
-    echo "$q";return;
+    $q="use `heroku_d320a3179e97ee9`; insert into `user`(`user_id`,`user_password`) values ('$name','$password')";//向資料庫插入表單傳來的值的sql
+    echo $q;
     echo "$link";
-    //return;
+    return;
     $reslut=mysql_query($link,$q);//執行sql
     if (!$reslut){
         die('Error: ' . mysql_error());//如果sql執行失敗輸出錯誤
