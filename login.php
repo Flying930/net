@@ -4,7 +4,8 @@
     $name=$_POST['name'];//post獲取表單裡的name
     $password = $_POST['password'];//post獲得使用者密碼單值
     $password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
-    echo "aa";
+    echo $name;
+    echo $password;
     /*if($_SERVER["REQUEST_METHOD"] == "POST"){
         $q = "SELECT * FROM user WHERE user_name = '$name' AND user_password = '$password'";//檢測資料庫是否有對應的username的sql
         if($link->query($q) === TRUE){
