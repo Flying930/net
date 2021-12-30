@@ -19,7 +19,7 @@
         }
         else{function_alert("Something wrong");}*/
         //echo mysql_query($q,$conn);
-        echo query($q);
+        echo "aa";
     }
     else{//如果使用者名稱或密碼有空
         echo "表單填寫不完整! 2秒後將跳至登入頁面~";
