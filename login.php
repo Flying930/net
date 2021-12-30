@@ -5,9 +5,8 @@
     $password = $_POST['password'];//post獲得使用者密碼單值
     $password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $q = "SELECT * FROM user WHERE user_name = '$name' AND user_password = '$password'";//檢測資料庫是否有對應的username的sql
+        $q = "SELECT * FROM user WHERE user_name = '".$name."' AND user_password = '".$password."'";//檢測資料庫是否有對應的username的sql
         if($link->query($q) === TRUE){
-            echo "  bb";
             if(mysqli_num_rows($result)==1 && $password==mysqli_fetch_assoc($result)["password"]){
                 session_start();
                 $_SESSION["loggedin"] = true;
