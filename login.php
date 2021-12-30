@@ -8,10 +8,10 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $q = "SELECT * FROM user WHERE user_name = '".$name."'";//檢測資料庫是否有對應的username的sql
         $aa = mysql_query($q,$conn);
-        if(mysqli_num_rows($result)==1 && $password==mysqli_fetch_assoc($result)["password"]){
+        if(mysqli_num_rows($aa)==1 && $password==mysqli_fetch_assoc($aa)["password"]){
                 session_start();
                 $_SESSION["loggedin"] = true;
-                $_SESSION["name"] = mysqli_fetch_assoc($result)["name"];
+                $_SESSION["name"] = mysqli_fetch_assoc($aa)["name"];
                 header("url=首頁.html");
         }
         else{function_alert("帳號或密碼錯誤"); }
