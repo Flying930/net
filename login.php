@@ -17,8 +17,8 @@
             else{function_alert("帳號或密碼錯誤"); }
         }*/
         echo "a";
+        //else{function_alert("Something wrong");}
     }
-    else{function_alert("Something wrong");}
     else{//如果使用者名稱或密碼有空
         echo "表單填寫不完整! 2秒後將跳至登入頁面~";
         echo "<a href='index.html'>未成功跳轉頁面請點擊此</a>";
