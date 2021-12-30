@@ -1,12 +1,12 @@
 <?PHP
     //header("Content-Type: text/html; charset=utf8");
     include('connect.php');//連結資料庫
+    $name=$_POST['name'];//post獲取表單裡的name
+    $password = $_POST['password'];//post獲得使用者密碼單值
+    $password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $name=$_POST['name'];//post獲取表單裡的name
-        $password = $_POST['password'];//post獲得使用者密碼單值
-        //$password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
         $q = "SELECT * FROM user WHERE user_name = '$name' AND user_password = '$password'";//檢測資料庫是否有對應的username的sql
-        if($link->query($q) === TRUE){
+        /*if($link->query($q) === TRUE){
             echo "  bb";
             /*if(mysqli_num_rows($result)==1 && $password==mysqli_fetch_assoc($result)["password"]){
                 session_start();
@@ -15,7 +15,7 @@
                 header("location:首頁.html");
             }
             //else{function_alert("帳號或密碼錯誤"); }*/
-        }
+        //}
     }
     else{function_alert("Something wrong");}
     /*else{//如果使用者名稱或密碼有空
