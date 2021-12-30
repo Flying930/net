@@ -17,7 +17,7 @@
             else{function_alert("帳號或密碼錯誤"); }
         }
         else{function_alert("Something wrong");}*/
-        echo mysql_query($q,$conn);
+        echo mysql_query($conn,$q);
     }
     else{//如果使用者名稱或密碼有空
         echo "表單填寫不完整! 2秒後將跳至登入頁面~";
