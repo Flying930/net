@@ -1,7 +1,7 @@
 <?PHP
     //header("Content-Type: text/html; charset=utf8");
     //include('connect.php');//連結資料庫
-    $conn=require_once(connect.php);
+    $conn=require_once("connect.php");
     $name=$_POST['name'];//post獲取表單裡的name
     $password = $_POST['password'];//post獲得使用者密碼單值
     $password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
