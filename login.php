@@ -1,6 +1,7 @@
 <?PHP
     //header("Content-Type: text/html; charset=utf8");
-    include('connect.php');//連結資料庫
+    //include('connect.php');//連結資料庫
+    $conn=require_once(connect.php);
     $name=$_POST['name'];//post獲取表單裡的name
     $password = $_POST['password'];//post獲得使用者密碼單值
     $password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
@@ -16,7 +17,7 @@
             else{function_alert("帳號或密碼錯誤"); }
         }
         else{function_alert("Something wrong");}*/
-        echo mysql_query($q,$link);
+        echo mysql_query($q,$conn);
     }
     else{//如果使用者名稱或密碼有空
         echo "表單填寫不完整! 2秒後將跳至登入頁面~";
