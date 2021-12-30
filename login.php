@@ -7,7 +7,7 @@
     $password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $q = "SELECT * FROM user WHERE user_name = '".$name."'";//檢測資料庫是否有對應的username的sql
-        $aa = mysql_query($q,$conn);
+        $aa = mysqli_query($conn,$q);
         if(mysqli_num_rows($aa)==1 && $password==mysqli_fetch_assoc($aa)["password"]){
                 session_start();
                 $_SESSION["loggedin"] = true;
