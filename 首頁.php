@@ -14,8 +14,8 @@
         <input type=button value="翻譯(Translate)" onClick="Translate()" />
         <?php session_start();  //很重要，可以用的變數存在session裡
               $username=$_SESSION["name"];
-              echo "<script>alert('.$username.歡迎近來我的網頁');
-                     window.location.href='index.html';
+              echo "<script>alert('$username 歡迎進來我的網頁');
+                     window.location.href='首頁.php';
                     </script>"; ?>
         <span hi=歡迎 style="color:rgb(65, 204, 127)"></span>
         <title>
