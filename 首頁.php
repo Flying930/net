@@ -113,7 +113,7 @@ var myChart = new Chart(ctx, {
     labels: ['Skadi', 'Skadi the Corrupting Heart', 'Eunectes', 'Mudrock', 'Projekt Red', 'Schwarz', 'Rosmontis'],
     datasets: [{
       label: '喜歡程度比較', //標籤
-      data: [5, 4, 3, 2, 1, 0], //資料
+      data: [7, 6, 5, 4, 3, 2, 1, 0], //資料
       //圖表背景色
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
