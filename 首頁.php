@@ -14,9 +14,9 @@
         <input type=button value="翻譯(Translate)" onClick="Translate()" />
         <?php session_start();  //很重要，可以用的變數存在session裡
               $username=$_SESSION["name"];
-              $color = #41cc7f
+              $color = "#41cc7f";
               $username = "<span class=\"$color\">". $username. "</span>";
-              echo $username ?>
+              echo $username; ?>
         <span hi=歡迎 style="color:rgb(65, 204, 127)"></span>
         <title>
             明日方舟個人首頁
