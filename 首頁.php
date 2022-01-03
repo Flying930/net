@@ -66,6 +66,14 @@
             </tr>
             <tr  align=center bgcolor=white>
               <td width="50%">
+                  <a href="迷迭香.html">迷迭香</a>
+              </td>
+              <td width="50%">
+                  <a href="黑.html">黑</a>
+              </td>
+            </tr>
+            <tr  align=center bgcolor=white>
+              <td width="50%">
                   <a href="森蚺.html">森蚺</a>
               </td>
               <td width="50%">
@@ -102,7 +110,7 @@ var myChart = new Chart(ctx, {
   type: 'bar', //圖表類型
   data: {
     //標題
-    labels: ['Skadi', 'Skadi the Corrupting Heart', 'Eunectes', 'Mudrock', 'Projekt Red'],
+    labels: ['Skadi', 'Skadi the Corrupting Heart', 'Eunectes', 'Mudrock', 'Projekt Red', 'Schwarz', 'Rosmontis'],
     datasets: [{
       label: '喜歡程度比較', //標籤
       data: [5, 4, 3, 2, 1, 0], //資料
@@ -112,7 +120,10 @@ var myChart = new Chart(ctx, {
         'rgba(54, 162, 235, 0.2)',
         'rgba(255, 206, 86, 0.2)',
         'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)'
+        'rgba(153, 102, 255, 0.2)',
+        'rgba(246, 158, 32, 0.2)',
+        'rgba(169, 212, 99, 0.2)'
+
       ],
       //圖表外框線色
       borderColor: [
@@ -120,7 +131,9 @@ var myChart = new Chart(ctx, {
         'rgba(54, 162, 235, 1)',
         'rgba(255, 206, 86, 1)',
         'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)'
+        'rgba(153, 102, 255, 1)',
+        'rgba(246, 158, 32, 1)',
+        'rgba(169, 212, 99, 1)'
       ],
       //外框線寬度
       borderWidth: 1
