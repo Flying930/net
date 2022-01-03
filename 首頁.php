@@ -16,7 +16,7 @@
               $username=$_SESSION["name"];
               echo "<script>alert('$username 歡迎進來我的網頁');
                      window.location.href='首頁.php';
-                    </script>"; ?>
+                    </script>"; return ;?>
         <span hi=歡迎 style="color:rgb(65, 204, 127)"></span>
         <title>
             明日方舟個人首頁
