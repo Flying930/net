@@ -14,6 +14,7 @@
         <input type=button value="翻譯(Translate)" onClick="Translate()" />
         <?php session_start();  //很重要，可以用的變數存在session裡
               $username=$_SESSION["name"];
+              echo $username;
               echo "<script>alert('$username 歡迎進來我的網頁');
                     </script>";?>
         <span hi=歡迎 style="color:rgb(65, 204, 127)"></span>
@@ -148,7 +149,7 @@ var myChart = new Chart(ctx, {
   }
 });
   
-function include(dom){const all=$("include",dom);
+/*function include(dom){const all=$("include",dom);
     for(let k=0;k<all.length;k++){let o=all[k];
       let src=$(o).attr('src');o.removeAttribute('src');
       fetch(src).then(function(file){file.text().then(function(content){ $(o).html(content); });},function(){});
@@ -156,7 +157,7 @@ function include(dom){const all=$("include",dom);
   }
   $(document).ready(function(){
     include(document);
-  });
+  });*/
 
   function Translate(){
     var language = document.getElementById("language").value;
