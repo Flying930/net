@@ -11,7 +11,8 @@
         if(mysqli_num_rows($aa)==1 && $password==mysqli_fetch_assoc($aa)["user_password"]){
                 session_start();
                 $_SESSION["loggedin"] = true;
-                $_SESSION["name"] = mysqli_fetch_assoc($aa)["user_name"];
+                //$_SESSION["name"] = mysqli_fetch_assoc($aa)["user_name"];
+                $_SESSION["name"] = $name;
                 header("location:首頁.php");
         }
         else{function_alert("帳號或密碼錯誤"); }
