@@ -12,7 +12,7 @@
                 session_start();
                 $_SESSION["loggedin"] = true;
                 $_SESSION["name"] = mysqli_fetch_assoc($aa)["user_name"];
-                header("location:首頁.html");
+                header("location:首頁.php");
         }
         else{function_alert("帳號或密碼錯誤"); }
     }
