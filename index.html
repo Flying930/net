@@ -4,13 +4,16 @@
         <meta charset="utf-8">
     </head>
     <body>
+        <div id="skd" style=" position:absolute; z-index: -1;">
+            <image src="img/skadi.gif" style='width:75px; height: 75px'/>   <!--鼠標圖案-->
+        </div>
         <!--<input type="button" id="bn">-->
         <!-- <input type="image" src="img\進入.png" id="bb" onClick="location.href='首頁.html'"> -->
         <form action="login.php" method="post"><br><br><br><br><br><br><br><br><br>
             <p><center>使用者名稱: <input type="text" name="name"></center></p>
             <p><center>&emsp;&emsp;&emsp;密碼: <input type="password" name="password"></center></p><br>
-            <p><center><a href="註冊.html">還沒註冊嗎?</a></center></p>
-            <button type="submit" name="submit" id="enter"><img src="img\進入.png" id="enter-img"></button>
+            <p><center><a href="註冊.html">還沒註冊嗎?</a></center></p><br>
+            <center><button type="submit" name="submit" id="enter"><img src="img\進入.png" id="enter-img"></button></center>
         </form>
         
         <!-- <audio id="myaudio" src="bgm/標題．Main.mp3" autoplay="autoplay" loop="true"></audio> -->
@@ -25,7 +28,27 @@
             background-attachment: fixed;
             background-size: cover;
         }
-        
+        #enter{
+            width: 157.5px;
+            height:54px;
+            position:fixed;  
+        }
+        #enter-img{
+            width: 156.5px;
+            height:53px;
+            position:fixed;
+        }
     </style>
-    
+    <!--top:65%;
+        left:43.8%; -->
+    <script>
+        function Skadi() {
+        var div = document.getElementById("skd");
+        var intX = window.event.pageX;
+        var intY = window.event.pageY;
+        div.style.left = intX+"px";
+        div.style.top = intY+"px";
+        }
+        document.onmousemove = Skadi;
+    </script>
 </html>
