@@ -15,7 +15,7 @@
         <?php session_start();  //很重要，可以用的變數存在session裡
               $username=$_SESSION["name"];
               echo $username;
-              echo "<script>alert('$username 歡迎進來我的網頁');
+              echo "<script>alert('$username 博士，歡迎進來我的網頁');
                     </script>";?>
         <span hi=歡迎 style="color:rgb(65, 204, 127)"></span>
         <title>
