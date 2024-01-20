@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <style>
+      div {
+        
+        font-size: 40pt;
+        font-weight: bold;
+        font-style: inherit;
+        background-color: darkblue;
+        display:inline;
+        
+      }
+    </style>
+<div style="background-color:green;display:inline;text-align:center;"> 我的display屬性設為inline</div><br>
+<span style="text-align:center;font-size: 40pt;font-weight:bold; background-color:white; display:block;opacity: .5;">是誰住在深海的大鳳梨裡？</span><br>
+<span style="text-align:center;background-color:white; font-size: 40pt;font-weight: bold; font-style: inherit;display:inline-table;opacity: .5;"><b><i>明日方舟</b></i></span>
+<center style="background-color:white;font-style: inherit;opacity: .5;"><font size="7"><b><i>明日方舟</b></i></font></center>
+  </head>
+  <body style="background-color: yellow;">
+    
+    <br>
+    <div>明日方舟</div>
+    <br>
+    我愛明日方舟❤❤❤
+    <div class="tooltip">鼠标移动到我这
+      <span class="tooltiptext">提示文本</span>
+    </div>
+  </body>
+  <style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px;
+        
+        /* 淡入 - 1秒内从 0% 到 100% 显示: */
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+    </style>
+</html>

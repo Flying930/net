@@ -1,0 +1,14 @@
+body{
+	background-image: url("img/mg1.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	animation: myanimation 17s infinite;
+}
+@keyframes myanimation {
+    0% {background-image: url("img/mg1.jpg");}
+    25% {background-image: url("img/bg2.jpg");}
+	50% {background-image: url("img/bg3.png");}
+	75% {background-image: url("img/bg4.png");}
+	100% {background-image: url("img/mg1.jpg");}
+}

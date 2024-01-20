@@ -1,0 +1,155 @@
+/*background*/
+body {
+  background-image: url("img/mg1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-animation: myanimation 17s infinite;
+          animation: myanimation 17s infinite;
+}
+@-webkit-keyframes myanimation {
+  0% {
+    background-image: url("img/mg1.jpg");
+  }
+  25% {
+    background-image: url("img/bg2.jpg");
+  }
+  50% {
+    background-image: url("img/bg3.png");
+  }
+  75% {
+    background-image: url("img/bg4.png");
+  }
+  100% {
+    background-image: url("img/mg1.jpg");
+  }
+}
+
+@keyframes myanimation {
+  0% {
+    background-image: url("img/mg1.jpg");
+  }
+  25% {
+    background-image: url("img/bg2.jpg");
+  }
+  50% {
+    background-image: url("img/bg3.png");
+  }
+  75% {
+    background-image: url("img/bg4.png");
+  }
+  100% {
+    background-image: url("img/mg1.jpg");
+  }
+}
+/*# sourceMappingURL=style.css.map */
+
+/*title*/
+.Title-outer{
+  text-align: center;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bold;
+}
+.Title-inner{
+  background-color:white;
+  display: inline;
+  opacity: .5;
+  
+}
+
+/*back to the top*/
+.Back-top{
+  z-index: 9999;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;    /*鼠標顯示*/
+  opacity: 0.5;
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background: url("img/top.jpeg");
+  background-size: 45px 45px;
+  border-radius: 13px;    /*變圓角*/
+  box-shadow: 0px 0px 3px #ffffff;
+  /* transform: translateY(0%); */
+  transition: all 0.2s linear;
+  &.hide {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0px 0px 6px #ffffff;
+  }
+}
+
+/*chart setting*/
+.chart-container{
+  position: relative;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  left: 50%;
+  transform: translate(-50%);
+  height:90vh;
+  width:80vw;
+  margin: 2% 0%;
+} 
+/*chart-background*/
+.chart-background{
+  background-color: #172b4d;
+    opacity: 0.75;
+}
+
+/*tool-tip*/
+/* .Tooltip{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+
+  &.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* 淡入 - 1秒内从 0% 到 100% 显示: 
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  &:hover.tooltiptext {
+    visibility: visible;
+  }
+} */
+
+/*music picture*/
+.Music-img-container{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.Music-img{
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  /* background: url(""); */
+  /* background-size: 40px 40px; */
+  /* background-repeat: no-repeat; */
+  /* box-shadow: 0px 0px 3px #ffffff; */
+  &:hover {
+    opacity: 0.8;
+    /* box-shadow: 0px 0px 6px #ffffff; */
+  }
+}
