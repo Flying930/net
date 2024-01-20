@@ -13,15 +13,16 @@
         </select>
         <input type=button value="翻譯(Translate)" onClick="Translate()" />
         <?php session_start();  //很重要，可以用的變數存在session裡
-              $username=$_SESSION["name"];
+              // $username=$_SESSION["name"];
+              $username="";
               echo $username;
-              echo "<script>alert('$username 博士，歡迎進來我的網頁');
-                    </script>";?>
+              echo "<script>博士，歡迎進來我的網頁
+                    </script><br>
         <span hi=歡迎 style="color:rgb(65, 204, 127)"></span>
         <title>
             明日方舟個人首頁
         </title>
-        <center><font size="7"><b><i>明日方舟</b></i></font></center>
+        <center style="background-color:white;font-style: inherit;display:inline;opacity: .5;"><font size="7"><b><i>明日方舟</b></i></font></center>
         <br><br>
         <meta charset="utf-8">
         <script>
@@ -47,7 +48,7 @@
             </tr>
         </table>
         <br><br><br>
-        <center><audio id="myaudio" src="bgm/主選單首頁．Home.mp3" autoplay="autoplay" loop="true">
+        <center><audio id="myaudio" src="bgm/Home.mp3" autoplay="autoplay" loop="true">
         </audio></center>
         <br><br><br>
         <table align=center border="2" width="90%">
@@ -58,31 +59,31 @@
             </tr>
             <tr  align=center bgcolor=white>
                 <td width="50%">
-                    <a href="斯卡蒂.html">斯卡蒂</a>
+                    <a href="Skadi.html">斯卡蒂</a>
                 </td>
                 <td width="50%">
-                    <a href="濁心斯卡蒂.html">濁心斯卡蒂</a>
+                    <a href="Skadi_the_Corrupting_Heart.html">濁心斯卡蒂</a>
                 </td>
             </tr>
             <tr  align=center bgcolor=white>
               <td width="50%">
-                  <a href="迷迭香.html">迷迭香</a>
+                  <a href="Rosmontis.html">迷迭香</a>
               </td>
               <td width="50%">
-                  <a href="黑.html">黑</a>
-              </td>
-            </tr>
-            <tr  align=center bgcolor=white>
-              <td width="50%">
-                  <a href="森蚺.html">森蚺</a>
-              </td>
-              <td width="50%">
-                  <a href="泥岩.html">泥岩</a>
+                  <a href="Schwarz.html">黑</a>
               </td>
             </tr>
             <tr  align=center bgcolor=white>
               <td width="50%">
-                  <a href="紅.html">紅</a>
+                  <a href="Eunectes.html">森蚺</a>
+              </td>
+              <td width="50%">
+                  <a href="Mudrock.html">泥岩</a>
+              </td>
+            </tr>
+            <tr  align=center bgcolor=white>
+              <td width="50%">
+                  <a href="Projekt_Red.html">紅</a>
               </td>
               <td width="50%">
                 敬請期待OwO
@@ -91,7 +92,7 @@
         </table>
         <center><div class="chart-container" style="position: relative; height:60vh; width:80vw">
           <canvas id="myChart"></canvas>
-          <a href="資源引用連結.html" style="color:white;">資料引用連結</a>
+          <a href="Source.html" style="color:white;">資料引用連結</a>
         </div></center>
     </body>
 </html>

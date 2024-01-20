@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-    include('connect.php');//連結資料庫
+    include('Connect.php');//連結資料庫
     //header("Content-Type: text/html; charset=utf8");
     /*if(!isset($_POST['submit'])){
         exit("錯誤執行");
@@ -13,7 +13,7 @@
         if ($link->query($q) === TRUE) {
             echo "註冊成功! 3秒後將跳至登入頁面~";//成功輸出註冊成功
             echo "<a href='index.html'>未成功跳轉頁面請點擊此</a>";
-                header("refresh:3;url=index.html");
+                header("refresh:3;url=Start.html");
                 exit;
         } else {
             echo "Error ";

@@ -1,7 +1,7 @@
 <?PHP
     //header("Content-Type: text/html; charset=utf8");
     //include('connect.php');//連結資料庫
-    $conn=require_once("connect.php");
+    $conn=require_once("Connect.php");
     $name=$_POST['name'];//post獲取表單裡的name
     $password = $_POST['password'];//post獲得使用者密碼單值
     $password_hash=password_hash($password,PASSWORD_DEFAULT);//hash加密
@@ -13,14 +13,14 @@
                 $_SESSION["loggedin"] = true;
                 //$_SESSION["name"] = mysqli_fetch_assoc($aa)["user_name"];
                 $_SESSION["name"] = $name;
-                header("location:首頁.php");
+                header("location:Index.php");
         }
         else{function_alert("帳號或密碼錯誤"); }
     }
     else{//如果使用者名稱或密碼有空
         echo "表單填寫不完整! 2秒後將跳至登入頁面~";
         echo "<a href='index.html'>未成功跳轉頁面請點擊此</a>";
-                header("refresh:2;url=index.html");
+                header("refresh:2;url=Start.html");
                 exit;
         //如果錯誤 2秒後跳轉到登入頁面重試;
     }
@@ -28,7 +28,7 @@
       
         // Display the alert box  
         echo "<script>alert('$message');
-         window.location.href='index.html';
+         window.location.href='Start.html';
         </script>"; 
         return false;
     } 

@@ -7,11 +7,16 @@
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="functions.js"></script>
         <style>@import "style.css";</style>
         <title>
-            黑
+            迷迭香
         </title>
-        <center><font size="7"><b><i>明日方舟</b></i></font></center>
+        <div class="Title-outer">
+            <div class="Title-inner">
+              &nbsp;明日方舟&nbsp;
+            </div>
+        </div>
         <br><br>
         <meta charset="utf-8">
     </head>
@@ -19,44 +24,35 @@
     <body>
         <div id="skd" style=" position:absolute; z-index: -1;">
             <image src="img/skadi.gif" style='width:75px; height: 75px'/>   <!--鼠標圖案-->
-        </div>    
+        </div>
+        <div class="Back-top" title="回頂部"></div>    
         <table align=center border="1" width="80%">
             <tr>
                 <td align=center bgcolor=white>
-                    黑 / Schwarz
+                    迷迭香 / Rosmontis
                 </td>                 
             </tr>
             <tr>
                 <td bgcolor=white align=center>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <image src="img/Schwarz1.jpg" style='width:100%'>
-                          </div>
-                          <div class="carousel-item">
-                            <image src="img/Schwarz2.jpg" style='width:100%'>
-                          </div>
-                          <div class="carousel-item">
-                            <image src="img/Schwarz3.jpg" style='width:100%'>
-                          </div>
-                        </div>
+                    <div class="carousel-item active">
+                        <image src="img/rosmontis.jpg" style='width:100%'>
                     </div>
                 </td>                 
             </tr>
             <tr>
                 <td bgcolor=white align=center>
-                    繪師: Liduke&emsp;&emsp;<a href="https://twitter.com/lidukelaya">twitter</a>
-                    &emsp;&emsp;<a href="https://www.pixiv.net/users/38088">pixiv</a>
+                    繪師: 唯@W&emsp;&emsp;<a href="https://twitter.com/hoshieve?lang=zh-Hant">twitter</a>
+                    &emsp;&emsp;<a href="https://www.pixiv.net/users/230943">pixiv</a>
                 </td>
             </tr>
         </table>
         <center><audio autoplay="autoplay" controls>
-            <source src="語音/schwarz.wav" type="audio/ogg">
+            <source src="voice/rosmontis.ogg" type="audio/ogg">
         </audio></center>
-        <center><a href="迷迭香.html" style="color:white;">上一位</a></font>
-            <a href="森蚺.html" style="color:white;">下一位</a></font></center>
+        <center><a href="Skadi_the_Corrupting_Heart.html" style="color:white;">上一位</a></font>
+        <a href="Schwarz.html" style="color:white;">下一位</a></font></center>
         <br><br>
-        <center><a href="首頁.php" style="color:white;">回首頁</a></font></center>
+        <center><a href="Index.php" style="color:white;">回首頁</a></font></center>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -65,13 +61,3 @@
     integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
     crossorigin="anonymous"></script>
 </html>
-<script>
-    function Skadi() {
-        var div = document.getElementById("skd");
-        var intX = window.event.pageX;
-        var intY = window.event.pageY;
-        div.style.left = intX+"px";
-        div.style.top = intY+"px";
-}
-document.onmousemove = Skadi;
-</script>
